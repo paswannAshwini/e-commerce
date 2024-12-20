@@ -65,6 +65,30 @@ img.mobilestore {
   color: #ffc371;
 }
 
+
+.header-quick-links ul {
+  gap: 20px;
+  list-style: none;
+  display: flex;
+}
+
+.header-quick-links ul li {
+  /* background: green; */
+  padding: 7px;
+  border-radius: 10px;
+  color: white;
+  background: linear-gradient(135deg, #ff5f6d, #ffc371);
+}
+.header-quick-links ul li:hover {
+transform: translateY(-5px);
+}
+
+.header-quick-links ul li a.header-link {
+  color: snow;
+  background: transparent;
+}
+
+
 /* User Icon and Login/Signup Section */
 .user-login-signup {
   display: flex;

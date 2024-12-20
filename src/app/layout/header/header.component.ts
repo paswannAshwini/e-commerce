@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
     
   }
 
- 
+
 
     // Method to toggle the mobile menu visibility
     toggleMenu(): void {

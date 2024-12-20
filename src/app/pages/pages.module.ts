@@ -7,7 +7,8 @@ import { ListingComponent } from './listing/listing.component';
 import { AddComponent } from './listing/add/add.component';
 import { LayoutModule } from '../layout/layout.module';
 import { BannerSliderComponent } from './banner-slider/banner-slider.component';
-import { ProfileComponent } from './profile/profile.component'
+import { ProfileComponent } from './profile/profile.component';
+import { ServiceComponent } from './service/service.component'
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { ProfileComponent } from './profile/profile.component'
     ListingComponent,
     AddComponent,
     BannerSliderComponent,
-    ProfileComponent
+    ProfileComponent,
+    ServiceComponent
   ],
   imports: [
     CommonModule,
