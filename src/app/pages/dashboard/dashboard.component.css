@@ -1,0 +1,144 @@
+/* Container styling */
+.dashboard-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin-top: 6%;
+  }
+  
+  /* Title styling */
+  .dashboard-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Cards container */
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Individual card styling */
+  .cards-container .card {
+    width: 250px;
+    height: 150px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  /* Hover effect */
+  .cards-container .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Icon styling */
+  .cards-container .card-icon {
+    font-size: 3rem;
+    opacity: 0.8;
+  }
+  
+  /* Content styling */
+  .cards-container .card-content {
+    text-align: right;
+  }
+  
+  .cards-container .card-title {
+    font-size: 1.2rem;
+    margin: 0;
+    text-transform: capitalize;
+  }
+  
+  .cards-container .card-count {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 5px 0 0;
+  }
+
+  h1.ourservice-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .cards-container .card {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+  
+    .cards-container .card-content {
+      text-align: left;
+      margin-top: 10px;
+    }
+  }
+
+
+  /* Container to align all cards */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+  align-items: center;
+  background-color: #f9fafc; /* Light background color */
+}
+
+/* Style each card */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for each card */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon styling inside each card */
+.icon img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+/* Label styling */
+.label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+  

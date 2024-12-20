@@ -1,0 +1,212 @@
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #ff5f6d, #ffc371); /* Gradient background */
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+img.mobilestore {
+  width: 70%;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  width: 50px;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Search Container Styles */
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  width: 250px;
+  margin-right: 10px;
+}
+
+.search-container input::placeholder {
+  color: #aaa;
+}
+
+.search-container button {
+  background: transparent;
+  border: none;
+  color: #ff5f6d;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  color: #ffc371;
+}
+
+/* User Icon and Login/Signup Section */
+.user-login-signup {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icons and buttons */
+}
+
+.user-icon {
+  font-size: 1.8em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.user-icon:hover {
+  color: rgb(78, 205, 196);
+}
+
+/* Login and Signup Buttons */
+.login-signup-buttons a {
+  padding: 8px 15px;
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: 1em;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.login-signup-buttons a:hover {
+  background-color: white;
+  color: #ff5f6d;
+}
+
+.login-signup-buttons .signup {
+  margin-left: 10px;
+  background-color: #ff5f6d;
+  color: white;
+  border: none;
+}
+
+.login-signup-buttons .signup:hover {
+  background-color: #ffc371;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 230px;
+  z-index: 2000;
+  padding: 10px 3px;
+  display: flex;
+  gap: 10px;
+
+}
+
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #f1f1f1;
+  transition: background-color 0.2s, color 0.2s;
+  background: aliceblue;
+  border-radius: 10px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f4f4f4;
+  color: #ff5f6d;
+}
+
+.dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu i {
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .search-container {
+    width: 200px;
+  }
+
+  .logo {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  .search-container {
+    width: 180px;
+  }
+
+  .user-icon {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search-container {
+    width: 200px;
+    margin: 0 10px;
+    justify-content: center;
+  }
+
+  .logo {
+    font-size: 1.6em;
+  }
+
+  .user-icon {
+    font-size: 1.6em;
+  }
+
+  .search-container input {
+    width: 100%;
+  }
+
+  .login-signup-buttons a {
+    font-size: 0.9em;
+  }
+}

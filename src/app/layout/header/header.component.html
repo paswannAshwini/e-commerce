@@ -1,0 +1,39 @@
+<header>
+  <div class="logo">
+    <a routerLink="/"><img class="mobilestore" src="/assets/logos/companylogo.png" alt="mobileStore" /></a>
+  </div>
+
+  <div class="search-container">
+    <input type="text" placeholder="Search..." />
+    <button>
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
+
+  <div class="dropdown">
+    <div class="user-icon" (click)="toggleMenu()">
+      <i class="fas fa-user"></i>
+    </div>
+
+    <!-- Dropdown Menu -->
+    <div class="dropdown-menu" *ngIf="isMenuOpen">
+      <ng-container *ngIf="!isLoggedIn">
+        <a routerLink="/auth/signup">
+          <i class="fas fa-user-plus"></i> Sign Up
+        </a>
+        <a routerLink="/auth/login">
+          <i class="fas fa-sign-in-alt"></i> Login
+        </a>
+      </ng-container>
+
+      <ng-container *ngIf="isLoggedIn">
+        <a routerLink="/pages/profile">
+          <i class="fas fa-user"></i> Profile
+        </a>
+        <a (click)="logout()">
+          <i class="fas fa-sign-out-alt"></i> Logout
+        </a>
+      </ng-container>
+    </div>
+  </div>
+</header>

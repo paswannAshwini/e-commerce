@@ -1,0 +1,106 @@
+/* Footer container styling */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background: linear-gradient(to right, #ff416c, #ff4b2b); /* Gradient matching the header */
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+/* Footer Logo Section */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 10px;
+}
+
+.footer-logo-img {
+  width: 40px;
+  height: auto;
+}
+
+.footer-logo span {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+img.mobilestore {
+  width: 25%;
+}
+/* Quick Links Section */
+.quick-links {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.quick-links h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.quick-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #FF6B6B;
+}
+
+/* Social Media Icons Section */
+.social-icons {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #FF6B6B;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 10px;
+  }
+
+  .quick-links,
+  .social-icons {
+      margin: 20px 0;
+      text-align: center;
+  }
+
+  .footer-logo {
+      margin-bottom: 20px;
+      justify-content: center;
+  }
+}
