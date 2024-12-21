@@ -1,0 +1,116 @@
+/* Overall Container */
+.about-container {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+/* Text Section */
+.about-text {
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #333;
+}
+
+.about-text h2 {
+    color: #007bff;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.about-text ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.about-text li {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+/* Image Section */
+.about-image {
+    padding: 30px;
+    background-color: #e9e9e9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 30px;
+    }
+
+    .about-text, .about-image {
+        padding: 20px;
+    }
+
+    .about-container .row {
+        margin-bottom: 40px;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text p, .about-text ul {
+        font-size: 16px;
+    }
+
+    /* Stack images on small screens */
+    .about-image {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .about-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Tablet Responsiveness */
+@media (min-width: 768px) and (max-width: 992px) {
+    .about-container {
+        padding: 40px;
+    }
+
+    .about-text h2 {
+        font-size: 30px;
+    }
+
+    .about-text p, .about-text ul {
+        font-size: 17px;
+    }
+
+    .about-container .row {
+        margin-bottom: 30px;
+    }
+}
+
+/* Additional Styling for Text Clarity */
+.about-text p, .about-text li {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+.row-about{
+    display: flex;
+    margin-bottom: 2%;
+}

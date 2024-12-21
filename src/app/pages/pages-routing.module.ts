@@ -5,6 +5,7 @@ import { ListingComponent } from './listing/listing.component';
 import { authGuard } from '../auth/auth.guard';
 import { ProfileComponent } from './profile/profile.component';
 import { ServiceComponent } from './service/service.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path:'service' , component: ServiceComponent,
     canActivate:[authGuard]
+  },
+  {
+    path:'about' , component: AboutComponent,
+   
   }
 ];
 

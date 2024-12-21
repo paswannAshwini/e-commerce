@@ -13,7 +13,7 @@
   <div class="header-quick-links">
     <ul>
       <li><a routerLink="/" class="header-link">Home</a></li>
-      <li><a routerLink="/about" class="header-link">About</a></li>
+      <li><a routerLink="/pages/about" class="header-link">About</a></li>
       <li *ngIf="isLoggedIn"><a routerLink="/pages/service" class="header-link">Services</a></li>
       <li><a routerLink="/contact" class="header-link">Contact</a></li>
     </ul>
@@ -55,7 +55,7 @@
   <div class="mobile-menu" [ngClass]="{'open': isHamburgerOpen}">
     <ul>
       <li><a routerLink="/" class="header-link">Home</a></li>
-      <li><a routerLink="/about" class="header-link">About</a></li>
+      <li><a routerLink="/pages/about" class="header-link">About</a></li>
       <li *ngIf="isLoggedIn"><a routerLink="/pages/service" class="header-link">Services</a></li>
       <li><a routerLink="/contact" class="header-link">Contact</a></li>
     </ul>
