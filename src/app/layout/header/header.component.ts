@@ -8,7 +8,8 @@ import { Router} from '@angular/router'
 })
 export class HeaderComponent implements OnInit {
   isMenuOpen: boolean = false;
-  isLoggedIn : boolean = false
+  isLoggedIn : boolean = false;
+  isHamburgerOpen = false;
 
 
   constructor( private router: Router){
@@ -21,7 +22,9 @@ export class HeaderComponent implements OnInit {
   }
 
 
-
+  toggleHamburger() {
+    this.isHamburgerOpen = !this.isHamburgerOpen;
+  }
     // Method to toggle the mobile menu visibility
     toggleMenu(): void {
       this.isMenuOpen = !this.isMenuOpen;

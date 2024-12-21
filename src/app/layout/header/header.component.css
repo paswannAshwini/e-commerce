@@ -4,14 +4,14 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background: linear-gradient(135deg, #ff5f6d, #ffc371); /* Gradient background */
+  background: linear-gradient(135deg, #ff5f6d, #ffc371);
   color: white;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 img.mobilestore {
@@ -65,7 +65,6 @@ img.mobilestore {
   color: #ffc371;
 }
 
-
 .header-quick-links ul {
   gap: 20px;
   list-style: none;
@@ -73,14 +72,14 @@ img.mobilestore {
 }
 
 .header-quick-links ul li {
-  /* background: green; */
   padding: 7px;
   border-radius: 10px;
   color: white;
   background: linear-gradient(135deg, #ff5f6d, #ffc371);
 }
+
 .header-quick-links ul li:hover {
-transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .header-quick-links ul li a.header-link {
@@ -88,12 +87,58 @@ transform: translateY(-5px);
   background: transparent;
 }
 
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+}
+
+.hamburger:hover {
+  color: #ffc371;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.mobile-menu ul li {
+  padding: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.mobile-menu ul li a {
+  color: #ff5f6d;
+  text-decoration: none;
+}
+
+.mobile-menu ul li:last-child {
+  border-bottom: none;
+}
+
+.mobile-menu ul li:hover {
+  background-color: #f4f4f4;
+}
 
 /* User Icon and Login/Signup Section */
 .user-login-signup {
   display: flex;
   align-items: center;
-  gap: 15px; /* Space between icons and buttons */
+  gap: 15px;
 }
 
 .user-icon {
@@ -106,32 +151,53 @@ transform: translateY(-5px);
   color: rgb(78, 205, 196);
 }
 
-/* Login and Signup Buttons */
-.login-signup-buttons a {
-  padding: 8px 15px;
-  color: white;
-  text-decoration: none;
-  background-color: transparent;
-  border: 2px solid white;
-  border-radius: 20px;
-  font-size: 1em;
-  transition: background-color 0.3s, color 0.3s;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-quick-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: none; /* Keep mobile menu hidden initially */
+  }
+
+  .mobile-menu.open {
+    display: block; /* Show mobile menu when 'open' class is added */
+  }
+
+  /* .search-container {
+    width: 180px;
+  } */
 }
 
-.login-signup-buttons a:hover {
-  background-color: white;
-  color: #ff5f6d;
-}
+@media (max-width: 480px) {
+  header {
+    padding: 10px 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.login-signup-buttons .signup {
-  margin-left: 10px;
-  background-color: #ff5f6d;
-  color: white;
-  border: none;
-}
+  .search-container {
+    width: 160px;
+    margin: 0 10px;
+  }
 
-.login-signup-buttons .signup:hover {
-  background-color: #ffc371;
+  .logo {
+    font-size: 1.4em;
+  }
+
+  .user-icon {
+    font-size: 1.6em;
+  }
+
+  .search-container input {
+    width: 100%;
+  }
 }
 
 /* Dropdown Styles */
@@ -151,7 +217,6 @@ transform: translateY(-5px);
   padding: 10px 3px;
   display: flex;
   gap: 10px;
-
 }
 
 .dropdown-menu a {
@@ -177,60 +242,4 @@ transform: translateY(-5px);
 
 .dropdown-menu i {
   margin-right: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .search-container {
-    width: 200px;
-  }
-
-  .logo {
-    font-size: 1.6em;
-  }
-}
-
-@media (max-width: 768px) {
-  header {
-    padding: 10px;
-  }
-
-  .search-container {
-    width: 180px;
-  }
-
-  .user-icon {
-    font-size: 1.6em;
-  }
-}
-
-@media (max-width: 480px) {
-  header {
-    padding: 10px 15px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .search-container {
-    width: 200px;
-    margin: 0 10px;
-    justify-content: center;
-  }
-
-  .logo {
-    font-size: 1.6em;
-  }
-
-  .user-icon {
-    font-size: 1.6em;
-  }
-
-  .search-container input {
-    width: 100%;
-  }
-
-  .login-signup-buttons a {
-    font-size: 0.9em;
-  }
 }

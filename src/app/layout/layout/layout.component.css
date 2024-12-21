@@ -1,9 +1,34 @@
-main {
+/* main {
     margin-top: 5%;
 }
-app-footer {
-    position: fixed;
+main {
+    overflow: auto;
+    padding: 20px;
+} */
+
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height of the viewport */
+  }
+  
+  app-header {
+    flex-shrink: 0; /* Prevent header shrinking */
+    position: relative; /* Ensure the header doesn't overlap the content */
+    z-index: 10; /* Make sure the header stays on top */
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px; /* Padding around the content */
+    margin-top: 60px; /* Adjust this value to match the height of your header */
+    overflow-y: auto; /* Allow scrolling for long content */
+  }
+  
+  app-footer {
+    flex-shrink: 0;
+    position: relative; /* Footer stays at the bottom */
     bottom: 0;
-    right: 0;
-    left: 0;
-}
+    width: 100%;
+  }
+  
