@@ -1,16 +1,38 @@
 <app-layout>
-<div class="dashboard-container">
-  <h1 class="dashboard-title">Dashboard</h1>
-  <div class="cards-container">
-    <div class="card" *ngFor="let card of cards" [style.backgroundColor]="card.bgColor">
-      <div class="card-icon">{{ card.icon }}</div>
-      <div class="card-content">
-        <h2 class="card-title">{{ card.title }}</h2>
-        <p class="card-count">{{ card.count }}</p>
+
+  <div class="dashboard-container">
+    <h1 class="dashboard-title">Dashboard</h1>
+    <div class="cards-container">
+      <div class="card" *ngFor="let card of cards" [style.backgroundColor]="card.bgColor">
+        <div class="card-icon">{{ card.icon }}</div>
+        <div class="card-content">
+          <h2 class="card-title">{{ card.title }}</h2>
+          <p class="card-count">{{ card.count }}</p>
+        </div>
       </div>
     </div>
   </div>
+  
+<!-- dashboard.component.html -->
+<div class="role-selection">
+  <h2>Select a Role</h2>
+  <div class="roles-container">
+    <!-- Loop through roles and display each as a clickable card -->
+    <div *ngFor="let role of roles" class="role-card"  (click)="openGadgetComponent(role)">
+      <div class="role-icon">
+        <!-- Dynamically display the image based on the role -->
+        <img [src]="roleImages[role]" alt="{{ role }} icon" />
+      </div>
+      <h3>{{ role | titlecase }}</h3>
+    </div>
+  </div>
 </div>
+
+
+
+
+
+
 
 
 </app-layout>

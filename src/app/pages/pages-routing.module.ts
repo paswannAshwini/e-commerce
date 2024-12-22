@@ -6,6 +6,9 @@ import { authGuard } from '../auth/auth.guard';
 import { ProfileComponent } from './profile/profile.component';
 import { ServiceComponent } from './service/service.component';
 import { AboutComponent } from './about/about.component';
+import { AddCartComponent } from './add-cart/add-cart.component';
+import { CartListingComponent } from './cart-listing/cart-listing.component';
+import { GadgetComponent } from './gadget/gadget.component';
 
 const routes: Routes = [
   {
@@ -32,7 +35,18 @@ const routes: Routes = [
   {
     path:'about' , component: AboutComponent,
    
-  }
+  },
+  {
+    path:'add-cart/:title' , component: AddCartComponent,
+   
+  },
+  {
+    path:'cart-listing' , component: CartListingComponent,
+   
+  },
+  {
+    path:'gadgets/:role' , component: GadgetComponent
+  },
 ];
 
 @NgModule({

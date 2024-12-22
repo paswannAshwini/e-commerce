@@ -76,6 +76,7 @@ img.mobilestore {
   border-radius: 10px;
   color: white;
   background: linear-gradient(135deg, #ff5f6d, #ffc371);
+  text-decoration: none;
 }
 
 .header-quick-links ul li:hover {
@@ -85,8 +86,11 @@ img.mobilestore {
 .header-quick-links ul li a.header-link {
   color: snow;
   background: transparent;
+  text-decoration: none;
 }
-
+a.header-link {
+  text-decoration: none;
+}
 /* Hamburger Icon */
 .hamburger {
   display: none;
@@ -131,7 +135,9 @@ img.mobilestore {
 }
 
 .mobile-menu ul li:hover {
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
+  background: linear-gradient(135deg, #ff5f6d, #ffc371);
+
 }
 
 /* User Icon and Login/Signup Section */
@@ -242,4 +248,11 @@ img.mobilestore {
 
 .dropdown-menu i {
   margin-right: 10px;
+}
+
+
+.cart-icon-container {
+  font-size: 1.8em;
+  cursor: pointer;
+  transition: color 0.3s;
 }

@@ -94,3 +94,67 @@ h1.ourservice-title {
   }
 }
 
+/* dashboard.component.css */
+.role-selection {
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.roles-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.role-card {
+  width: 200px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.role-card:hover {
+  transform: scale(1.1);
+}
+
+.role-card h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.role-icon img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .role-card {
+    width: 150px;
+    height: 200px;
+  }
+
+  .role-icon img {
+    width: 80px;
+    height: 80px;
+  }
+}

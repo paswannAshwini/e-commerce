@@ -10,15 +10,21 @@
     </button>
   </div>
 
+
   <div class="header-quick-links">
     <ul>
-      <li><a routerLink="/" class="header-link">Home</a></li>
-      <li><a routerLink="/pages/about" class="header-link">About</a></li>
-      <li *ngIf="isLoggedIn"><a routerLink="/pages/service" class="header-link">Services</a></li>
-      <li><a routerLink="/contact" class="header-link">Contact</a></li>
+      <a routerLink="/" class="header-link"><li>Home</li></a>
+      <a routerLink="/pages/about" class="header-link"><li>About</li></a>
+      <a *ngIf="isLoggedIn" routerLink="/pages/service" class="header-link"><li>Services</li></a>
+      <a routerLink="/contact" class="header-link"><li>Contact</li></a>
     </ul>
   </div>
 
+  <!-- Cart Icon with Quantity -->
+  <div class="cart-icon-container" *ngIf="totalCartQuantity > 0" (click)="cartQuantity()">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-quantity">{{ totalCartQuantity }}</span>
+  </div>
   <div class="dropdown">
     <div class="user-icon" (click)="toggleMenu()">
       <i class="fas fa-user"></i>
@@ -54,10 +60,10 @@
   <!-- Mobile Menu for Hamburger -->
   <div class="mobile-menu" [ngClass]="{'open': isHamburgerOpen}">
     <ul>
-      <li><a routerLink="/" class="header-link">Home</a></li>
-      <li><a routerLink="/pages/about" class="header-link">About</a></li>
-      <li *ngIf="isLoggedIn"><a routerLink="/pages/service" class="header-link">Services</a></li>
-      <li><a routerLink="/contact" class="header-link">Contact</a></li>
+      <a routerLink="/" class="header-link"><li>Home</li></a>
+      <a routerLink="/pages/about" class="header-link"><li>About</li></a>
+      <a *ngIf="isLoggedIn" routerLink="/pages/service" class="header-link"><li>Services</li></a>
+      <a routerLink="/contact" class="header-link"><li>Contact</li></a>
     </ul>
   </div>
 </header>

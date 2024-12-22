@@ -9,7 +9,11 @@ import { LayoutModule } from '../layout/layout.module';
 import { BannerSliderComponent } from './banner-slider/banner-slider.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ServiceComponent } from './service/service.component';
-import { AboutComponent } from './about/about.component'
+import { AboutComponent } from './about/about.component';
+import { AddCartComponent } from './add-cart/add-cart.component';
+import { CartListingComponent } from './cart-listing/cart-listing.component';
+import { GadgetComponent } from './gadget/gadget.component';
+
 
 
 @NgModule({
@@ -20,12 +24,16 @@ import { AboutComponent } from './about/about.component'
     BannerSliderComponent,
     ProfileComponent,
     ServiceComponent,
-    AboutComponent
+    AboutComponent,
+    AddCartComponent,
+    CartListingComponent,
+    GadgetComponent
   ],
   imports: [
     CommonModule,
     PagesRoutingModule,
-    LayoutModule
+    LayoutModule,
+   
   ]
 })
 export class PagesModule { }

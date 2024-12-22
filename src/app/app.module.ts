@@ -5,7 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { LayoutModule} from './layout/layout.module'
+import { LayoutModule} from './layout/layout.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 
 
@@ -19,7 +20,10 @@ import { LayoutModule} from './layout/layout.module'
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    LayoutModule
+    LayoutModule,
+    BrowserAnimationsModule,
+
+
  
   ],
   providers: [],

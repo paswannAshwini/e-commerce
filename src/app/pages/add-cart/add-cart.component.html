@@ -1,0 +1,54 @@
+
+<app-layout>
+
+    <div class="add-cart-container">
+ 
+        <div class="product-details">
+            <button class="goBack" (click)="goBackToDashboard()">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+          <!-- Left Side: Image and Title -->
+          <div class="left-side">
+            <h3 class="product-title">{{ phoneTitle }}</h3>
+            <img  [src]="phoneImage" alt="{{ phoneTitle }}" class="product-image" />
+            <h2 >Price: ₹{{ Phoneprice }}</h2><span> {{ phoneTitle }} </span>
+          </div>
+      
+          <!-- Right Side: Features and Add to Cart Button -->
+          <div class="right-side">
+            <h4>Product Features</h4>
+            <div class="features-container">
+              <div class="features-column">
+                <ul class="features-list">
+                  <li>📸 Camera: 108MP Ultra HD</li>
+                  <li>🔋 Battery: 5000mAh, Fast Charging</li>
+                  <li>⚡ Processor: Qualcomm Snapdragon 888</li>
+                  <li>🌐 Connectivity: 5G, Wi-Fi 6, Bluetooth 5.0</li>
+                  <li>💾 Storage: 128GB / 256GB</li>
+                  <li>🖥 Display: 6.7" AMOLED, 120Hz Refresh Rate</li>
+                  <li>🔊 Audio: Stereo Speakers, Dolby Atmos</li>
+                </ul>
+              </div>
+              <div class="features-column">
+                <ul class="features-list">
+                  
+                  <li>📱 Operating System: Android 12</li>
+                  <li>🎮 Gaming: GPU Turbo, 90Hz Refresh Rate</li>
+                  <li>🌈 Colors: Black, Silver, Blue</li>
+                  <li>🔒 Security: Fingerprint Sensor, Face Unlock</li>
+                  <li>🛡️ Protection: Corning Gorilla Glass 6</li>
+                  <li>💡 Features: Dual SIM, IP68 Water Resistance</li>
+                  <li>⚙️ Accessories: Earbuds, Fast Charger Included</li>
+                  <li>📦 Box Contents: Phone, Charger, Case, Earphones</li>
+                </ul>
+              </div>
+            </div>
+      
+            <button class="add-to-cart-button" (click)="addToCart()">Add to Cart</button>
+          </div>
+      
+        </div>
+      </div>
+      
+      
+</app-layout>

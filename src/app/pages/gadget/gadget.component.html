@@ -1,0 +1,34 @@
+<app-layout>
+  <div *ngIf="role === 'phone'" class="dashBoardPhone-container">
+    <h1 class="dashboardphone-title">Phones</h1>
+    <div class="phonecards-container">
+      <div class="phonecard" *ngFor="let phone of phoneImages" [routerLink]="['/pages/add-cart', phone.title]"
+        [queryParams]="{ image: phone.image ,price: phone.price}" class="clickable-card">
+        <img [src]="phone.image" alt="{{ phone.title }}" class="phone-image">
+        <h3 class="phone-name">{{ phone.title }}</h3>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="role === 'laptop'" class="dashBoardPhone-container">
+    <h1 class="dashboardphone-title">Laptops</h1>
+    <div class="phonecards-container">
+      <div class="phonecard" *ngFor="let laptop of laptopImages" [routerLink]="['/pages/add-cart', laptop.title]"
+        class="clickable-card">
+        <img [src]="laptop.image" alt="{{ laptop.title }}" class="phone-image">
+        <h3 class="phone-name">{{ laptop.title }}</h3>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="role === 'television'" class="dashBoardPhone-container">
+    <h1 class="dashboardphone-title">Televisions</h1>
+    <div class="phonecards-container">
+      <div class="phonecard" *ngFor="let television of televisionImages" [routerLink]="['/pages/add-cart', television.title]"
+        class="clickable-card">
+        <img [src]="television.image" alt="{{ television.title }}" class="phone-image">
+        <h3 class="phone-name">{{ television.title }}</h3>
+      </div>
+    </div>
+  </div>
+</app-layout>

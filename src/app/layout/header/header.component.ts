@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router} from '@angular/router'
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-header',
@@ -11,16 +12,24 @@ export class HeaderComponent implements OnInit {
   isLoggedIn : boolean = false;
   isHamburgerOpen = false;
 
+  totalCartQuantity: number = 0;
 
-  constructor( private router: Router){
+
+  constructor( private router: Router,private cartService: CartService){
 
   }
   ngOnInit(): void {
 
     this.isLoggedIn = localStorage.getItem('authToken') !== null;
+    this.cartService.cartQuantity$.subscribe(quantity => {
+      this.totalCartQuantity = quantity;
+    });
     
   }
+  cartQuantity(){
+    this.router.navigate(['/pages/cart-listing']);
 
+  }
 
   toggleHamburger() {
     this.isHamburgerOpen = !this.isHamburgerOpen;
