@@ -10,7 +10,7 @@
 
             <!-- Form will only be shown if formSubmitted is false -->
             <div class="shipping-info" *ngIf="!formSubmitted">
-                <h2>Shipping Information</h2>
+                <h2>{{ isEditMode ? 'Edit Shipping Information' : 'Shipping Information' }}</h2>
                 <form [formGroup]="checkOutForm" (ngSubmit)="onSubmit()">
                     <div class="form-group">
                         <label for="name">Full Name:</label>
@@ -28,7 +28,7 @@
                         <label for="address">Shipping Address:</label>
                         <input type="text" id="address" formControlName="address" name="address" required />
                     </div>
-                    <button type="submit" class="place-order-button">Submit</button>
+                    <button type="submit" class="place-order-button">{{ isEditMode ? 'Update' : 'Submit' }}</button>
                 </form>
             </div>
 
@@ -42,8 +42,10 @@
                     <p><strong>Address:</strong> {{ savedData?.address }}</p>
                 </div>
 
-                    <div class="payment-procced">
+                    <div class="payment-procced address-save">
+                        <button class="place-order-button edit" (click)="editData()">Edit</button>
                         <button class="place-order-button" (click)="resetdata()">Remove</button>
+                        
                     </div>
             </div>
 

@@ -91,7 +91,13 @@
   }
   .payment-procced {
     text-align: right;
+    /* margin-top: 15%; */
 }
+.payment-procced.address-save{
+  text-align: right;
+  margin-top: 15%;
+}
+
   .payment-section {
     margin-top: 40px;
     padding: 20px;
@@ -142,4 +148,8 @@
     padding: 20px;
     border-radius: 5px;
   }
+
+  button.place-order-button.edit {
+    margin-right: 10px;
+}
   

@@ -11,7 +11,8 @@ export class CheckoutitemComponent implements OnInit {
   paymentMethod: string = 'credit';
   checkOutForm!: FormGroup;
   formSubmitted: boolean = false;  // Flag to control form visibility
-  savedData: any = null;           // Holds the data from localStorage
+  savedData: any = null;    
+  isEditMode = false;       // Holds the data from localStorage
 
   constructor(private router: Router, private fb: FormBuilder) {}
 
@@ -44,11 +45,16 @@ export class CheckoutitemComponent implements OnInit {
       // Hide the form and show the saved data
       this.formSubmitted = true;
       this.savedData = formData;
+      this.isEditMode = false; 
 
-      console.log('Form Submitted:', formData);
-    } else {
-      console.log('Form is invalid');
-    }
+      
+    } 
+  }
+
+  editData(){
+    this.isEditMode = true;  // Enable edit mode
+    this.formSubmitted = false;  // Show the form again
+    this.checkOutForm.patchValue(this.savedData); 
   }
 
   resetdata(){
@@ -56,6 +62,7 @@ export class CheckoutitemComponent implements OnInit {
     this.checkOutForm.reset();
     this.savedData = null;
     this.formSubmitted = false;
+    this.isEditMode = false;
 
   }
 
