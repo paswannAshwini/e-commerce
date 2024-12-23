@@ -9,16 +9,21 @@ import { AboutComponent } from './about/about.component';
 import { AddCartComponent } from './add-cart/add-cart.component';
 import { CartListingComponent } from './cart-listing/cart-listing.component';
 import { GadgetComponent } from './gadget/gadget.component';
+import { HomeComponent } from './home/home.component';
+import { CheckoutitemComponent } from './checkoutitem/checkoutitem.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'dashboard',
+    redirectTo: 'home',
     pathMatch: 'full',
   },
   {
     path:'dashboard' , component:DashboardComponent,
     
+  },
+  {
+    path:'home' , component: HomeComponent
   },
   {
     path:'listing' , component:ListingComponent,
@@ -30,7 +35,7 @@ const routes: Routes = [
   },
   {
     path:'service' , component: ServiceComponent,
-    canActivate:[authGuard]
+    // canActivate:[authGuard]
   },
   {
     path:'about' , component: AboutComponent,
@@ -46,6 +51,9 @@ const routes: Routes = [
   },
   {
     path:'gadgets/:role' , component: GadgetComponent
+  },
+  {
+    path:'checkout' , component: CheckoutitemComponent
   },
 ];
 

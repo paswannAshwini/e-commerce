@@ -18,3 +18,8 @@
   }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.download-btn{
+  background: linear-gradient(175deg, #0d6efd, #cd0dfd);
+    color: white;
+}

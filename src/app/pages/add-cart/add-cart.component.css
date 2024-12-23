@@ -14,7 +14,7 @@
     width: 100%;
     max-width: 1200px; /* Limiting the width for large screens */
     background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 17px #0d6efd;
     border-radius: 10px;
     overflow: hidden;
     padding: 20px;
@@ -57,13 +57,13 @@
     padding: 20px;
     background-color: #ecf9f5;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 17px #0d6efd;
   }
   
-  h4 {
+  .right-side h4 {
     font-size: 24px;
     font-weight: bold;
-    color: #27ae60;
+    color: blue;
     margin-bottom: 20px;
   }
   
@@ -99,18 +99,16 @@
   .add-to-cart-button {
     padding: 15px 25px;
     font-size: 18px;
-    background-color: #27ae60;
     border: none;
     border-radius: 5px;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
     width: 100%;
+    background: linear-gradient(175deg, #0d6efd, #cd0dfd);
   }
   
-  .add-to-cart-button:hover {
-    background-color: #2ecc71; /* Slightly lighter green on hover */
-  }
+
   
   .add-to-cart-button:active {
     background-color: #1f8f60; /* Darker green when clicked */
@@ -161,7 +159,7 @@
   }
 
   .goBack {
-    background-color: #ff6f61;
+    background: linear-gradient(175deg, #0d6efd, #cd0dfd);
     color: white;
     border: none;
     padding: 12px 25px;

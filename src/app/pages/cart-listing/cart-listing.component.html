@@ -40,7 +40,7 @@
     
     <div class="cart-summary" *ngIf="cartItems.length > 0">
       <h2>Total: ₹{{ getTotalCartPrice() }}</h2>
-      <button class="checkout-btn"(click)="checkoutListing()">Proceed to Checkout</button>
+      <button class="checkout-btn download-btn"(click)="checkoutListing()">Proceed</button>
     </div>
   </div>
 </app-layout>

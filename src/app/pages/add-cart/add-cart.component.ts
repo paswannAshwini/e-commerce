@@ -13,11 +13,14 @@ export class AddCartComponent implements OnInit{
   phoneImage: string | null = '';
   Phoneprice: string | null = '';
 
+  isLoggedIn : boolean = false;
+
 
   constructor(private route: ActivatedRoute, private cartService: CartService,private router: Router,) {}
 
   ngOnInit(): void {
     // Get the title from the path parameters
+    this.isLoggedIn = localStorage.getItem('authToken') !== null;
     this.route.params.subscribe(params => {
       this.phoneTitle = params['title']; // This will be the phone title from the URL path
       
@@ -33,11 +36,17 @@ export class AddCartComponent implements OnInit{
   addToCart() {
     this.cartService.setCartData(this.phoneImage, this.phoneTitle,  this.Phoneprice);
     // Navigate to CartListingComponent
-    this.router.navigate(['/pages/cart-listing']);
+
+    if(this.isLoggedIn){
+      this.router.navigate(['/pages/cart-listing']);
+    }else{
+      this.router.navigate(['/auth/login'])
+    }
+   
   }
   
   goBackToDashboard(){
-    this.router.navigate(['/pages/dashboard'])
+    this.router.navigate(['/pages/home'])
 
   }
 

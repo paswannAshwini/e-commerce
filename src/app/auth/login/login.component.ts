@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit{
       if(storedData.email === formValues.email && storedData.password === formValues.password ){
         const authToken = 'dummyAuthToken';
         localStorage.setItem('authToken', authToken );
-        this.router.navigate(['/pages/listing'])  
+        this.router.navigate(['/pages/home'])  
         this.loginForm.reset(); 
       }
       else {

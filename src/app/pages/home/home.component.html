@@ -1,0 +1,192 @@
+<app-layout>
+
+    <section class="promo-banner">
+        <div class="row">
+            <div class="col-md-5 left-content">
+                <h1>Lowest Prices<br>Best Quality Shopping</h1>
+                <div class="features">
+                    <!-- Free Delivery -->
+                    <div class="feature">
+                        <i class="fas fa-truck"></i>
+                        <p>Free Delivery</p>
+                    </div>
+                    
+                    <!-- Cash on Delivery -->
+                    <div class="feature">
+                        <i class="fas fa-money-bill"></i>
+                        <p>Cash on Delivery</p>
+                    </div>
+                    
+                    <!-- Easy Returns -->
+                    <div class="feature">
+                        <i class="fas fa-undo-alt"></i>
+                        <p>Easy Returns</p>
+                    </div>
+                </div>
+                <a routerLink="/" class="download-btn">Download the  App</a>
+            </div>
+            <div class=" col-md-7 right-content">
+                <div class="product-images">
+                    <img src="/assets/e-commerce-banner.webp" alt="header-banner" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid p-0 mt-4">
+        <div class="row">
+            <div class="col-md-3 col-12 container-box1">
+                <div class="sort-by mb-4">
+                    <h5>Sort by</h5>
+                    <select class="form-select">
+                        <option selected>Relevance</option>
+                        <option value="1">Price: Low to High</option>
+                        <option value="2">Price: High to Low</option>
+                    </select>
+                </div>
+                <div class="all-filter-product">
+                    <div class="filter-product">
+                        <h5>FILTERS</h5>
+                        <p>1000+ Products</p>
+                        <div class="filter-item">
+                            <div class="filter-header" (click)="toggleCollapse('category')">
+                                <h6>Category</h6>
+                                <!-- <i class="arrow" [ngClass]="{'rotate': isCategoryCollapsed}">▼</i> -->
+                                <i class="fas fa-angle-down" [ngClass]="{'rotate': isCategoryCollapsed}"></i>
+                            </div>
+                            <div class="filter-dropdown"
+                                [ngStyle]="{'display': isCategoryCollapsed ? 'block' : 'none'}">
+                                <input type="text" class="form-control mb-3" placeholder="Search" />
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="women-tshirts">
+                                    <label class="form-check-label" for="women-tshirts">Women T-shirts</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="women-tops">
+                                    <label class="form-check-label" for="women-tops">Women Tops And Tunics</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="analog-watches">
+                                    <label class="form-check-label" for="analog-watches">Analog Watches</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="bangles-bracelets">
+                                    <label class="form-check-label" for="bangles-bracelets">Bangles & Bracelets</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <div class="filter-header" (click)="toggleCollapse('gender')">
+                                <h6>Gender</h6>
+                                <i class="fas fa-angle-down" [ngClass]="{'rotate': isGenderCollapsed}"></i>
+                            </div>
+                            <div class="filter-dropdown" [ngStyle]="{'display': isGenderCollapsed ? 'block' : 'none'}">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gender-male">
+                                    <label class="form-check-label" for="gender-male">Male</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gender-female">
+                                    <label class="form-check-label" for="gender-female">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <div class="filter-header" (click)="toggleCollapse('color')">
+                                <h6>Color</h6>
+                                <i class="fas fa-angle-down" [ngClass]="{'rotate': isColorCollapsed}"></i>
+                            </div>
+                            <div class="filter-dropdown" [ngStyle]="{'display': isColorCollapsed ? 'block' : 'none'}">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="color-red">
+                                    <label class="form-check-label" for="color-red">Red</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="color-blue">
+                                    <label class="form-check-label" for="color-blue">Blue</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="color-green">
+                                    <label class="form-check-label" for="color-green">Green</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <div class="filter-header" (click)="toggleCollapse('size')">
+                                <h6>Size</h6>
+                                <i class="fas fa-angle-down" [ngClass]="{'rotate': isSizeCollapsed}"></i>
+                            </div>
+                            <div class="filter-dropdown" [ngStyle]="{'display': isSizeCollapsed ? 'block' : 'none'}">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="size-small">
+                                    <label class="form-check-label" for="size-small">Small</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="size-medium">
+                                    <label class="form-check-label" for="size-medium">Medium</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="size-large">
+                                    <label class="form-check-label" for="size-large">Large</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 col-12 container-box2">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3" *ngFor="let phone of phoneImages" [routerLink]="['/pages/add-cart', phone.title]" [queryParams]="{ image: phone.image ,price: phone.price}">
+                        <div class="card">
+                            <img [src]="phone.image" alt="{{ phone.title }}" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-title">{{ phone.title }}</h6>
+                                <p class="price">₹{{ phone.price }}</p>
+                                <p class="free-delivery">Free Delivery</p>
+                                <div class="rating">
+                                    <span class="start-rating">3.9 ★</span>
+                                    <span class="review">9695 Reviews</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3" *ngFor="let laptop of laptopImages">
+                        <div class="card">
+                            <img [src]="laptop.image" alt="{{ laptop.title }}" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-title">{{ laptop.title }}</h6>
+                                <p class="price">₹{{ laptop.price }}</p>
+                                <p class="free-delivery">Free Delivery</p>
+                                <div class="rating">
+                                    <span class="start-rating">3.9 ★</span>
+                                    <span class="review">9695 Reviews</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-3" *ngFor="let television of televisionImages">
+                        <div class="card">
+                            <img [src]="television.image" alt="{{ television.title }}" class="card-img-top">
+                            <div class="card-body">
+                                <h6 class="card-title">{{ television.title }}</h6>
+                                <p class="price">₹{{ television.price }}</p>
+                                <p class="free-delivery">Free Delivery</p>
+                                <div class="rating">
+                                    <span class="start-rating">3.9 ★</span>
+                                    <span class="review">9695 Reviews</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</app-layout>

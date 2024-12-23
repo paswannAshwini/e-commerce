@@ -19,6 +19,7 @@ export class CartListingComponent implements OnInit {
     this.isLoggedIn = localStorage.getItem('authToken') !== null;
 
     const cartData = this.cartService.getCartData();
+    
     console.log(cartData)
     if (cartData) {
       this.cartItems.push({
@@ -65,14 +66,14 @@ export class CartListingComponent implements OnInit {
 
     checkoutListing(){
       if(this.isLoggedIn){
-        this.router.navigate(['/pages/listing'])
+        this.router.navigate(['/pages/checkout'])
       }else{
         this.router.navigate(['/auth/login'])
       }
     }
 
     goBackToDashboard(){
-      this.router.navigate(['/pages/dashboard'])
+      this.router.navigate(['/pages/home'])
   
     }
 }

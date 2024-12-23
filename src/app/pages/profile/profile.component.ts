@@ -20,7 +20,7 @@ export class ProfileComponent implements OnInit{
 
 
   goBackToDashboard(){
-    this.router.navigate(['/pages/dashboard'])
+    this.router.navigate(['/pages/home'])
 
   }
 

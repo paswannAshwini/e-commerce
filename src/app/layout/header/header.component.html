@@ -11,14 +11,14 @@
   </div>
 
 
-  <div class="header-quick-links">
+  <!-- <div class="header-quick-links">
     <ul>
       <a routerLink="/" class="header-link"><li>Home</li></a>
       <a routerLink="/pages/about" class="header-link"><li>About</li></a>
       <a *ngIf="isLoggedIn" routerLink="/pages/service" class="header-link"><li>Services</li></a>
       <a routerLink="/contact" class="header-link"><li>Contact</li></a>
     </ul>
-  </div>
+  </div> -->
 
   <!-- Cart Icon with Quantity -->
   <div class="cart-icon-container" *ngIf="totalCartQuantity > 0" (click)="cartQuantity()">
@@ -53,17 +53,17 @@
   </div>
 
   <!-- Hamburger Icon -->
-  <div class="hamburger" (click)="toggleHamburger()">
+  <!-- <div class="hamburger" (click)="toggleHamburger()">
     <i class="fas fa-bars"></i>
-  </div>
+  </div> -->
 
   <!-- Mobile Menu for Hamburger -->
-  <div class="mobile-menu" [ngClass]="{'open': isHamburgerOpen}">
+  <!-- <div class="mobile-menu" [ngClass]="{'open': isHamburgerOpen}">
     <ul>
       <a routerLink="/" class="header-link"><li>Home</li></a>
       <a routerLink="/pages/about" class="header-link"><li>About</li></a>
       <a *ngIf="isLoggedIn" routerLink="/pages/service" class="header-link"><li>Services</li></a>
       <a routerLink="/contact" class="header-link"><li>Contact</li></a>
     </ul>
-  </div>
+  </div> -->
 </header>

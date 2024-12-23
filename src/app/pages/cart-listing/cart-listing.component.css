@@ -1,9 +1,10 @@
 /* General styles for the cart listing page */
 .cart-listing-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: #f9f9f9;
+    box-shadow: 0 4px 17px #0d6efd;
     border-radius: 8px;
   }
   
@@ -33,7 +34,7 @@
   }
   
   .cart-table th {
-    background-color: #ff6f61;
+    background: linear-gradient(175deg, #0d6efd, #cd0dfd);
     color: white;
     font-weight: bold;
   }
@@ -58,7 +59,7 @@
   }
   
   .quantity-btn {
-    background-color: #ff6f61;
+    background: linear-gradient(175deg, #0d6efd, #cd0dfd);
     color: white;
     font-size: 18px;
     border: none;
@@ -79,7 +80,6 @@
   }
   
   .checkout-btn {
-    background-color: #28a745;
     color: white;
     font-size: 20px;
     padding: 12px 20px;
@@ -87,11 +87,12 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+    background: linear-gradient(175deg, #0d6efd, #cd0dfd);
   }
   
-  .checkout-btn:hover {
+  /* .checkout-btn:hover {
     background-color: #218838;
-  }
+  } */
   
   /* Mobile responsiveness */
   @media (max-width: 768px) {
@@ -116,7 +117,7 @@
   
 
   .goBack {
-    background-color: #ff6f61;
+    background: linear-gradient(175deg, #0d6efd, #cd0dfd);
     color: white;
     border: none;
     padding: 12px 25px;

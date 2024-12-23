@@ -4,10 +4,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
-  background: linear-gradient(to right, #ff416c, #ff4b2b); /* Gradient matching the header */
+  background: linear-gradient(175deg, #0d6efd, #cd0dfd);/* Gradient matching the header */
   color: #fff;
   flex-wrap: wrap;
 }
+
 
 /* Footer Logo Section */
 .footer-logo {
@@ -55,7 +56,7 @@ img.mobilestore {
 }
 
 .footer-link:hover {
-  color: #FF6B6B;
+  color: #212529;;
 }
 
 /* Social Media Icons Section */

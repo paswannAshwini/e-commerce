@@ -13,6 +13,9 @@ import { AboutComponent } from './about/about.component';
 import { AddCartComponent } from './add-cart/add-cart.component';
 import { CartListingComponent } from './cart-listing/cart-listing.component';
 import { GadgetComponent } from './gadget/gadget.component';
+import { HomeComponent } from './home/home.component';
+import { CheckoutitemComponent } from './checkoutitem/checkoutitem.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -27,12 +30,16 @@ import { GadgetComponent } from './gadget/gadget.component';
     AboutComponent,
     AddCartComponent,
     CartListingComponent,
-    GadgetComponent
+    GadgetComponent,
+    HomeComponent,
+    CheckoutitemComponent
   ],
   imports: [
     CommonModule,
     PagesRoutingModule,
     LayoutModule,
+    FormsModule,
+    ReactiveFormsModule
    
   ]
 })

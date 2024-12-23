@@ -43,6 +43,6 @@ export class HeaderComponent implements OnInit {
     logout(){
       localStorage.removeItem('authToken'); // Remove the token
       this.isLoggedIn = false;
-      this.router.navigate(['/pages/dashboard']); // Redirect to login page
+      this.router.navigate(['/pages/home']); // Redirect to login page
     }
 }
