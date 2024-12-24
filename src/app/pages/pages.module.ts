@@ -16,8 +16,9 @@ import { GadgetComponent } from './gadget/gadget.component';
 import { HomeComponent } from './home/home.component';
 import { CheckoutitemComponent } from './checkoutitem/checkoutitem.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PaymentmodeComponent } from './paymentmode/paymentmode.component';
 
-
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -32,14 +33,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CartListingComponent,
     GadgetComponent,
     HomeComponent,
-    CheckoutitemComponent
+    CheckoutitemComponent,
+    PaymentmodeComponent
   ],
   imports: [
     CommonModule,
     PagesRoutingModule,
     LayoutModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTooltipModule
    
   ]
 })

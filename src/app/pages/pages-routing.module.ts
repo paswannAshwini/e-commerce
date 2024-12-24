@@ -11,6 +11,7 @@ import { CartListingComponent } from './cart-listing/cart-listing.component';
 import { GadgetComponent } from './gadget/gadget.component';
 import { HomeComponent } from './home/home.component';
 import { CheckoutitemComponent } from './checkoutitem/checkoutitem.component';
+import { PaymentmodeComponent } from './paymentmode/paymentmode.component';
 
 const routes: Routes = [
   {
@@ -35,25 +36,34 @@ const routes: Routes = [
   },
   {
     path:'service' , component: ServiceComponent,
-    // canActivate:[authGuard]
+    canActivate:[authGuard]
   },
   {
     path:'about' , component: AboutComponent,
+    canActivate:[authGuard]
    
   },
   {
     path:'add-cart/:title' , component: AddCartComponent,
+    
    
   },
   {
     path:'cart-listing' , component: CartListingComponent,
+    
    
   },
   {
-    path:'gadgets/:role' , component: GadgetComponent
+    path:'gadgets/:role' , component: GadgetComponent,
+    canActivate:[authGuard]
   },
   {
-    path:'checkout' , component: CheckoutitemComponent
+    path:'checkout' , component: CheckoutitemComponent,
+    canActivate:[authGuard]
+  },
+  {
+    path:'payment-mode' , component: PaymentmodeComponent,
+    canActivate:[authGuard]
   },
 ];
 

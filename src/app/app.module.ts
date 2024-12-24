@@ -7,7 +7,7 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LayoutModule} from './layout/layout.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -22,6 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     ReactiveFormsModule,
     LayoutModule,
     BrowserAnimationsModule,
+    MatTooltipModule
 
 
  

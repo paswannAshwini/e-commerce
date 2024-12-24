@@ -71,6 +71,7 @@ export class CheckoutitemComponent implements OnInit {
   }
 
   onPayment(){
+    this.router.navigate(['/pages/payment-mode'])
 
   }
 }

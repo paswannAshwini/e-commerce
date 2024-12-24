@@ -32,27 +32,6 @@ export class HomeComponent {
     {title: 'Vivo-Y18T-128GB-Gem-Green',price:'15000', image:'/assets/phones/Vivo-Y18T-128GB-Gem-Green.webp'},
     {title: 'Apple-iPhone-16-Pro-Max',price:'15000', image:'/assets/phones/Apple-iPhone-16-Pro-Max.webp'},
     {title: 'Apple-iPhone-16-Pro-Max',price:'15000', image:'/assets/phones/Apple-iPhone-16-Pro-Max.webp'},
-    
-
-  ]
-
-
-  laptopImages = [
-    {title: 'laptop1', price:'15000', image:'/assets/laptops/laptop1.webp'},
-    {title: 'laptop2', price:'15000', image:'/assets/laptops/laptop2.webp'},
-    {title: 'laptop3', price:'15000', image:'/assets/laptops/laptop3.webp'},
-    {title: 'laptop4', price:'15000', image:'/assets/laptops/laptop4.webp'},
-    {title: 'laptop5', price:'15000', image:'/assets/laptops/laptop5.webp'},
-    {title: 'laptop6', price:'15000', image:'/assets/laptops/laptop6.webp'},
-    {title: 'laptop7', price:'15000', image:'/assets/laptops/laptop7.webp'},
-    {title: 'laptop8', price:'15000', image:'/assets/laptops/laptop8.webp'},
-    {title: 'laptop9', price:'15000', image:'/assets/laptops/laptop9.webp'},
-    {title: 'laptop10', price:'15000', image:'/assets/laptops/laptop10.webp'},
-    {title: 'laptop11', price:'15000', image:'/assets/laptops/laptop11.webp'},
-    {title: 'laptop12', price:'15000', image:'/assets/laptops/laptop12.webp'},
-
-  ]
-  televisionImages = [
     {title: 'television1', price:'15000', image:'/assets/televisions/television1.webp'},
     {title: 'television2', price:'15000', image:'/assets/televisions/television2.webp'},
     {title: 'television3', price:'15000', image:'/assets/televisions/television3.webp'},
@@ -65,8 +44,51 @@ export class HomeComponent {
     {title: 'television10', price:'15000', image:'/assets/televisions/television10.webp'},
     {title: 'television11', price:'15000', image:'/assets/televisions/television11.webp'},
     {title: 'television12', price:'15000', image:'/assets/televisions/television12.webp'},
-
+    {title: 'laptop1', price:'15000', image:'/assets/laptops/laptop1.webp'},
+    {title: 'laptop2', price:'15000', image:'/assets/laptops/laptop2.webp'},
+    {title: 'laptop3', price:'15000', image:'/assets/laptops/laptop3.webp'},
+    {title: 'laptop4', price:'15000', image:'/assets/laptops/laptop4.webp'},
+    {title: 'laptop5', price:'15000', image:'/assets/laptops/laptop5.webp'},
+    {title: 'laptop6', price:'15000', image:'/assets/laptops/laptop6.webp'},
+    {title: 'laptop7', price:'15000', image:'/assets/laptops/laptop7.webp'},
+    {title: 'laptop8', price:'15000', image:'/assets/laptops/laptop8.webp'},
+    {title: 'laptop9', price:'15000', image:'/assets/laptops/laptop9.webp'},
+    {title: 'laptop10', price:'15000', image:'/assets/laptops/laptop10.webp'},
+    {title: 'laptop11', price:'15000', image:'/assets/laptops/laptop11.webp'},
+    {title: 'laptop12', price:'15000', image:'/assets/laptops/laptop12.webp'},
   ]
+
+
+  // laptopImages = [
+  //   {title: 'laptop1', price:'15000', image:'/assets/laptops/laptop1.webp'},
+  //   {title: 'laptop2', price:'15000', image:'/assets/laptops/laptop2.webp'},
+  //   {title: 'laptop3', price:'15000', image:'/assets/laptops/laptop3.webp'},
+  //   {title: 'laptop4', price:'15000', image:'/assets/laptops/laptop4.webp'},
+  //   {title: 'laptop5', price:'15000', image:'/assets/laptops/laptop5.webp'},
+  //   {title: 'laptop6', price:'15000', image:'/assets/laptops/laptop6.webp'},
+  //   {title: 'laptop7', price:'15000', image:'/assets/laptops/laptop7.webp'},
+  //   {title: 'laptop8', price:'15000', image:'/assets/laptops/laptop8.webp'},
+  //   {title: 'laptop9', price:'15000', image:'/assets/laptops/laptop9.webp'},
+  //   {title: 'laptop10', price:'15000', image:'/assets/laptops/laptop10.webp'},
+  //   {title: 'laptop11', price:'15000', image:'/assets/laptops/laptop11.webp'},
+  //   {title: 'laptop12', price:'15000', image:'/assets/laptops/laptop12.webp'},
+
+  // ]
+  // televisionImages = [
+  //   {title: 'television1', price:'15000', image:'/assets/televisions/television1.webp'},
+  //   {title: 'television2', price:'15000', image:'/assets/televisions/television2.webp'},
+  //   {title: 'television3', price:'15000', image:'/assets/televisions/television3.webp'},
+  //   {title: 'television4', price:'15000', image:'/assets/televisions/television4.webp'},
+  //   {title: 'television5', price:'15000', image:'/assets/televisions/television5.webp'},
+  //   {title: 'television6', price:'15000', image:'/assets/televisions/television6.webp'},
+  //   {title: 'television7', price:'15000', image:'/assets/televisions/television7.webp'},
+  //   {title: 'television8', price:'15000', image:'/assets/televisions/television8.webp'},
+  //   {title: 'television9', price:'15000', image:'/assets/televisions/television9.webp'},
+  //   {title: 'television10', price:'15000', image:'/assets/televisions/television10.webp'},
+  //   {title: 'television11', price:'15000', image:'/assets/televisions/television11.webp'},
+  //   {title: 'television12', price:'15000', image:'/assets/televisions/television12.webp'},
+
+  // ]
  
    // Toggle method for collapsing/expanding filter sections
    toggleCollapse(section: string) {
